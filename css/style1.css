@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+body{
+    /* background: #091924; */
+    background: #fff;
+}
+
+/* Dark and Light */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/* Dark and Light end */
+#clockcontainer{
+   position: relative;
+   border-radius: 2px solid red;
+    width: 40vw;
+    height: 40vw;
+    background: url(../img/clock1.png) no-repeat;
+    background-size: 100%;
+    margin: auto;
+    border-radius: 50%;
+    transition: transform .2s;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+
+}
+#clockcontainer:hover{
+
+    transform: scale(0.8);
+}
+
+#hour,#minute,#second,#point {
+    position: absolute;
+    background-color: #091924;
+    border-radius: 6px 6px 0 0;
+    transform-origin: bottom;
+
+}
+#point{
+    top: 0;
+    bottom:0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 3.5%;
+    height: 3.5%;
+    border-radius: 50%;
+
+}
+#hour
+{
+    width: 1.5%;
+    height: 29%;
+    top: 21%;
+    left: 49.5%; 
+    background-color: rgb(245, 86, 86);
+}
+#minute
+{
+    width: 0.8%;
+    height: 33%;
+    top: 17%;
+    left: 49.5%;  
+
+}
+#second
+{
+    width: 0.5%;
+    height: 46%;
+    top: 11%;
+    left: 49.7%; 
+    transform-origin:50%  85%;
+}

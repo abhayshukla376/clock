@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/images.jfif" />
+    <title>Clock</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Main css-->
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+   
+    <div class="main-text bg-light text-primary text-center text-capitalize p-3">
+       <label for="Dark"><h3>Dark Mode</h3></label>
+        <label class="switch text-end mx-5">
+            <input type="checkbox" id="theme" onclick="thememode()" checked>
+            <span class="slider round"></span>
+          </label>
+          <label for="Light"><h3>Light Mode</h3></label>
+    </div>
+   <div class="container" id="clockcontainer">
+       <div id="hour"></div>
+       <div id="minute"></div>
+       <div id="point"></div>
+       <div id="second"></div>
+   </div>
+   <div class="main-text bg-light text-primary text-center text-capitalize p-3 mt-3">
+    <h2>Analog clock developed by abhay kumar shukla</h2>
+ </div>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
