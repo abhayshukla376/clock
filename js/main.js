@@ -26,6 +26,9 @@ if(mode == false)
     document.getElementById("minute").style.backgroundColor = "#fff";
     document.getElementById("second").style.backgroundColor = "#fff";
     document.getElementById("point").style.backgroundColor = "#fff";
+    document.getElementById("ftxt").style.backgroundColor = "#000000";
+    document.getElementById("ftxt").style.color = "#fff";
+    document.getElementById("ftxt").style.border = "2px solid #fff";
     document.getElementById("clockcontainer").style.boxShadow = "0 1rem 3rem rgba(255,255,255,.175)";
 
 }
@@ -35,6 +38,9 @@ if(mode == true)
     document.getElementById("minute").style.backgroundColor = "#000000";
     document.getElementById("second").style.backgroundColor = "#000000";
     document.getElementById("point").style.backgroundColor = "#000000";
+    document.getElementById("ftxt").style.backgroundColor = "#F8F9FA";
+    document.getElementById("ftxt").style.color = "#2196F3";
+    document.getElementById("ftxt").style.border = "none";
     document.getElementById("clockcontainer").style.boxShadow = "0 1rem 3rem rgba(0,0,0,.175)";
 
 }
