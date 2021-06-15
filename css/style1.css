@@ -133,3 +133,24 @@ body{
     left: 49.7%; 
     transform-origin:50%  85%;
 }
+
+.footer-text{
+
+  background: #F8F9FA;
+  color: #2196F3;
+  margin-top: 3rem;
+}
+.ftxt{
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width:1195px)
+ {
+   .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   }
+   
+}
